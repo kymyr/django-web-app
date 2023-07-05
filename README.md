@@ -1,5 +1,17 @@
-# Description
-This is the final assignment for the Bakend Developer Capstone Course of the Meta Backend Developer Professional Certificate on Coursera.
+This is the final project for the Backend Developer Capstone Course of the Meta Backend Developer Professional Certificate on Coursera.
+<br> <br>
+
+# Environment Variables
+For authenticated API requests in the view of the restaurant app, a username and password must be provided. Follow the instructions bellow <br>
+
+Inside the restaurant app folder, create a file called .env and place the code inside it
+```jsx
+USERNAME=your_username
+PASSWORD=your_password
+```
+<aside>💡 replace "your_username" and "your_password" with a valid username and password respectively</aside>
+
+<aside>💡 Be aware that `django-environ` must be installed for this to work. Such dependency should be installed by running `pipenv install`</aside>
 <br> <br>
 
 # Project Structure
@@ -47,19 +59,6 @@ Apply the migrations
 python manage.py migrate
 ```
 <br>
-
-# Environment Variables
-For authenticated API requests in the view of the restaurant app, a username and password must be provided. Follow the instructions bellow <br>
-
-Inside the restaurant app folder, create a file called .env and place the code inside it
-```jsx
-USERNAME=yout_username
-PASSWORD=your_password
-```
-<aside>💡 replace "your_username" and "your_password" with a valid username and password respectively</aside>
-
-<aside>💡 Be aware that `django-environ` must be installed for this to work. Such dependency should be installed by running `pipenv install`</aside>
-<br> <br>
 
 # API Endpoints
 The `api` app has a total of 4 endpoints. Additionally, `Djoser` and `SimpleJWT` endpoints are available.
