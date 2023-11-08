@@ -9,9 +9,9 @@ Inside the restaurant app folder, create a file called .env and place the code i
 USERNAME=your_username
 PASSWORD=your_password
 ```
-<aside>💡 replace "your_username" and "your_password" with a valid username and password respectively</aside>
+<aside>!!! replace "your_username" and "your_password" with a valid username and password respectively</aside>
 
-<aside>💡 Be aware that `django-environ` must be installed for this to work. Such dependency should be installed by running `pipenv install`</aside>
+<aside>!!! Be aware that `django-environ` must be installed for this to work. Such dependency should be installed by running `pipenv install`</aside>
 <br> <br>
 
 # Project Structure
@@ -50,7 +50,7 @@ DATABASES = {
     },
 }
 ```
-💡 Change those settings according to your local setup.
+!! Change these settings according to your local setup.
 <br>
 <br>
 
@@ -137,7 +137,7 @@ http://127.0.0.1:8000/auth/users/
 | GET | Retrieves all users | 200 | No |
 | POST | Creates a user | 201 | No |
 
-💡 Please refer to the [Djoser documentation](https://djoser.readthedocs.io/en/latest/getting_started.html#available-endpoints) for further usage on these endpoints.
+Please refer to the [Djoser documentation](https://djoser.readthedocs.io/en/latest/getting_started.html#available-endpoints) for further usage on these endpoints.
 <br> <br>
 
 ### Endpoints for `simplejwt` app
@@ -183,4 +183,4 @@ Destroying test database for alias 'default'...
 ```
 <br>
 
-<aside>💡 These tests intrinsically test the `restaurant` models by creating entries on its database through the Django ORM.</aside>
+<aside> These are used to test the `restaurant` models by creating entries on its database through the Django ORM.</aside>
